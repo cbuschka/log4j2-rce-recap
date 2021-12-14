@@ -3,12 +3,13 @@ import lombok.SneakyThrows;
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.ServerSocket;
+import java.net.Socket;
 import java.net.SocketException;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class LdapMock {
 
-    private AtomicInteger counter = new AtomicInteger(0);
+    private final AtomicInteger counter = new AtomicInteger(0);
 
     private volatile ServerSocket serverSocket;
 
@@ -28,7 +29,7 @@ public class LdapMock {
     @SneakyThrows(IOException.class)
     private void run() {
         while (serverSocket != null) {
-            try (var socket = serverSocket.accept()) {
+            try (Socket socket = serverSocket.accept()) {
                 counter.incrementAndGet();
             } catch (SocketException ex) {
                 boolean regularShutdown = serverSocket == null;
@@ -41,7 +42,7 @@ public class LdapMock {
 
     @SneakyThrows(IOException.class)
     public synchronized void stop() {
-        var oldServerSocket = serverSocket;
+        ServerSocket oldServerSocket = serverSocket;
         serverSocket = null;
 
         oldServerSocket.close();
