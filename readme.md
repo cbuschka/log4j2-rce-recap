@@ -32,7 +32,7 @@ bug, but may have different security flaws.
 
 * log4j2 evaluates a lookup pattern ( ```${...}``` ) both on formatting string and arguments. so when input from outside is
   logged such patterns can be added and log4j2 will evaluate them.
-* the lookup handle for jndi is enable by default, and so it can be triggered by such a lookup pattern, descript above,
+* the lookup handle for jndi is enable by default, and so it can be triggered by such a lookup pattern described above,
   e.g.
   ```${jndi:127.0.0.1:1389/a}```
 * because of bugs in the jndi code java is prone to remote code executions
