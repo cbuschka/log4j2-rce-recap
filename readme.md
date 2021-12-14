@@ -30,7 +30,7 @@ bug, but may have different security flaws.
 
 ### The exploit
 
-* log4j2 evaluates a lookup pattern (```${...}``) both on formatting string and arguments. so when input from outside is
+* log4j2 evaluates a lookup pattern ( ```${...}``` ) both on formatting string and arguments. so when input from outside is
   logged such patterns can be added and log4j2 will evaluate them.
 * the lookup handle for jndi is enable by default, and so it can be triggered by such a lookup pattern, descript above,
   e.g.
