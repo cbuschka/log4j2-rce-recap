@@ -1,6 +1,4 @@
-# log4j12-rce-recap
-
-### Little recap of the log4j2 remote code execution (CVE-2021-44228)
+# Little recap of the log4j2 remote code execution (CVE-2021-44228)
 
 ## Requirements
 
