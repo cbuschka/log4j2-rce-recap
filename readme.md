@@ -25,7 +25,7 @@ The surefire plugin will be executed two times:
 
 ### log4j vs log4j2
 
-log4j2 is NOT log4j 1.x; both are logging frameworks, but they are API incompatible. log4j 1.x is not affected by this
+log4j2 is __not__ log4j 1.x; both are logging frameworks, but they are API incompatible. log4j 1.x is not affected by this
 bug, but may have different security flaws.
 
 ### The exploit
