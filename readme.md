@@ -1,6 +1,6 @@
 # log4j12-rce-recap
 
-### Unit test that shows the exploitability of a log4j2 bug
+### Little recap of the log4j2 remote code execution (CVE-2021-44228)
 
 ## Requirements
 
