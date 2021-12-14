@@ -8,6 +8,21 @@
 * java >= 8
 * no running ldap on 127.0.0.1:1389
 
+## Usage
+
+Build with maven.
+
+```
+mvn test
+```
+
+The surefire plugin will be executed two times:
+
+* [ExploitabilityTest](./src/test/java/ExploitabilityTest.java) proofs the expolitability of the bug.
+
+* [MitigationTest](./src/test/java/MitigationTest.java) will be executed with the vm property
+```-Dlog4j2.formatMsgNoLookups=true``` and proof the effectiveness of the mitigation.
+
 ## In Short
 
 ### log4j vs log4j2
