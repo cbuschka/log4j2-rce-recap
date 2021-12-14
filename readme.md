@@ -47,5 +47,5 @@ bug, but may have different security flaws.
 * [presentation about flaws in jndi](https://www.blackhat.com/docs/us-16/materials/us-16-Munoz-A-Journey-From-JNDI-LDAP-Manipulation-To-RCE.pdf)
 * [mitigation for spring](https://spring.io/blog/2021/12/10/log4j2-vulnerability-and-spring-boot)
 * [article on heise in german](https://www.heise.de/news/Kritische-Zero-Day-Luecke-in-log4j-gefaehrdet-zahlreiche-Server-und-Apps-6291653.html)
-* [poc](https://github.com/tangxiaofeng7/CVE-2021-44228-Apache-Log4j-Rce)
-* [poc of 0x0021h](https://github.com/0x0021h/apache-log4j-rce)
+* [another poc](https://github.com/tangxiaofeng7/CVE-2021-44228-Apache-Log4j-Rce)
+* [list of bulletins](https://gist.github.com/SwitHak/b66db3a06c2955a9cb71a8718970c592)
